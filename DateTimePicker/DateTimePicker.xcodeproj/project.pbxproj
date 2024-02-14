@@ -21,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC04A12A2B7D372D001F510C /* DatePickerV2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DatePickerV2.xcdatamodel; sourceTree = "<group>"; };
 		DCE222C72B71422500166872 /* DateTimePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DateTimePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE222CA2B71422500166872 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DCE222CB2B71422500166872 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -423,9 +424,10 @@
 		DCE222FF2B718C5E00166872 /* DatePicker.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				DC04A12A2B7D372D001F510C /* DatePickerV2.xcdatamodel */,
 				DCE223002B718C5E00166872 /* DatePicker.xcdatamodel */,
 			);
-			currentVersion = DCE223002B718C5E00166872 /* DatePicker.xcdatamodel */;
+			currentVersion = DC04A12A2B7D372D001F510C /* DatePickerV2.xcdatamodel */;
 			path = DatePicker.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

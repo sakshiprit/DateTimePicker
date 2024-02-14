@@ -51,18 +51,20 @@ class DataManager {
     }
     
     // Inserts a new Employee object with the provided date and time string into Core Data.
-    func insertDateTime(dateTime:String)  {
+    func insertDateTime(dateTime:String,usernName:String)  {
         let employee =  Employee(context: persistentContainer.viewContext)
         employee.check_in_date_time = dateTime
+        employee.name = usernName
         save()
     }
 
     // Retrieves the most recent 'check_in_date_time' value from Core Data.
-    func getLatestStoredTime() -> String? {
+    func getLatestStoredTime(username:String) -> String? {
         let request: NSFetchRequest<Employee> = Employee.fetchRequest()
         let sortDescriptor = NSSortDescriptor(key: "check_in_date_time", ascending: false)
         request.sortDescriptors = [sortDescriptor]
         request.fetchLimit = 1
+        request.predicate = NSPredicate(format: "name == %@", username)
         var fetched: [Employee] = []
         do {
             fetched = try persistentContainer.viewContext.fetch(request)
