@@ -2,7 +2,7 @@
 //  Employee+CoreDataClass.swift
 //  DateTimePicker
 //
-//  Created by Sakshi Patil on 05/02/2024.
+//  Created by Sakshi Patil on 14/02/2024.
 //
 //
 
@@ -11,5 +11,5 @@ import CoreData
 
 @objc(Employee)
 public class Employee: NSManagedObject {
-    
+
 }

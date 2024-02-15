@@ -38,7 +38,7 @@ class DateTimePickerViewModel: ObservableObject {
 
     // Fetches the most recent check-in time or defaults to a mock API date on first launch.
     func initializeDate() async {
-        if let lastDateTime = DataManager.shared.getLatestStoredTime()  {
+        if let lastDateTime = DataManager.shared.getLatestStoredTime(for: "Sakshi")  {
            if let date = dateFormatter.date(from: lastDateTime) {
               selectedDate = date
             }
@@ -54,7 +54,7 @@ class DateTimePickerViewModel: ObservableObject {
         if isDateInFuture {
             showAlert = true
         } else {
-            DataManager.shared.insertDateTime(dateTime:  dateFormatter.string(from: selectedDate))
+            DataManager.shared.insertDateTime(dateTime:  dateFormatter.string(from: selectedDate),usernName: "Sakshi")
             isSubmitted = true
         }
     }
