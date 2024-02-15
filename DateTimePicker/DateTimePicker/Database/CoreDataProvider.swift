@@ -59,12 +59,12 @@ class DataManager {
     }
 
     // Retrieves the most recent 'check_in_date_time' value from Core Data.
-    func getLatestStoredTime(username:String) -> String? {
+    func getLatestStoredTime(for name:String) -> String? {
         let request: NSFetchRequest<Employee> = Employee.fetchRequest()
         let sortDescriptor = NSSortDescriptor(key: "check_in_date_time", ascending: false)
         request.sortDescriptors = [sortDescriptor]
         request.fetchLimit = 1
-        request.predicate = NSPredicate(format: "name == %@", username)
+        request.predicate = NSPredicate(format: "name == %@", name)
         var fetched: [Employee] = []
         do {
             fetched = try persistentContainer.viewContext.fetch(request)

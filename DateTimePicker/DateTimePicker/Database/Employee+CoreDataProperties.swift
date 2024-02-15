@@ -2,13 +2,12 @@
 //  Employee+CoreDataProperties.swift
 //  DateTimePicker
 //
-//  Created by pritam bolenwar on 14/02/2024.
+//  Created by Sakshi Patil on 14/02/2024.
 //
 //
 
 import Foundation
 import CoreData
-
 
 extension Employee {
 

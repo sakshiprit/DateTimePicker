@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC04A12F2B7D71E7001F510C /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC04A12E2B7D71E7001F510C /* StartViewModel.swift */; };
 		DCE222CC2B71422500166872 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE222CB2B71422500166872 /* AppDelegate.m */; };
 		DCE222CF2B71422500166872 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE222CE2B71422500166872 /* SceneDelegate.m */; };
 		DCE222D22B71422500166872 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE222D12B71422500166872 /* ViewController.m */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		DC04A12A2B7D372D001F510C /* DatePickerV2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DatePickerV2.xcdatamodel; sourceTree = "<group>"; };
+		DC04A12E2B7D71E7001F510C /* StartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
 		DCE222C72B71422500166872 /* DateTimePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DateTimePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE222CA2B71422500166872 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DCE222CB2B71422500166872 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -38,9 +40,9 @@
 		DCE222F22B716E9100166872 /* DateTimePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimePickerViewModel.swift; sourceTree = "<group>"; };
 		DCE222F52B718A5E00166872 /* CoreDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
 		DCE223002B718C5E00166872 /* DatePicker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DatePicker.xcdatamodel; sourceTree = "<group>"; };
-		DCE223022B718CCD00166872 /* Employee+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Employee+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DCE223032B718CCD00166872 /* Employee+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Employee+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DCE223072B7195E300166872 /* DateTimeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeAPI.swift; sourceTree = "<group>"; };
+		DCF25EF52B7DEB890004992F /* Employee+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Employee+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DCF25EF62B7DEB890004992F /* Employee+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Employee+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,9 +93,9 @@
 			isa = PBXGroup;
 			children = (
 				DCE222F52B718A5E00166872 /* CoreDataProvider.swift */,
+				DCF25EF62B7DEB890004992F /* Employee+CoreDataProperties.swift */,
+				DCF25EF52B7DEB890004992F /* Employee+CoreDataClass.swift */,
 				DCE222FF2B718C5E00166872 /* DatePicker.xcdatamodeld */,
-				DCE223022B718CCD00166872 /* Employee+CoreDataClass.swift */,
-				DCE223032B718CCD00166872 /* Employee+CoreDataProperties.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				DCE222F22B716E9100166872 /* DateTimePickerViewModel.swift */,
+				DC04A12E2B7D71E7001F510C /* StartViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				DCE222F62B718A5E00166872 /* CoreDataProvider.swift in Sources */,
 				DCE222CF2B71422500166872 /* SceneDelegate.m in Sources */,
 				DCE222F32B716E9200166872 /* DateTimePickerViewModel.swift in Sources */,
+				DC04A12F2B7D71E7001F510C /* StartViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
