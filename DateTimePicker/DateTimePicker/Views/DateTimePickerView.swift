@@ -12,6 +12,9 @@ struct DateTimePickerView: View {
     
     // Manage the data and logic for the date picker.
     @ObservedObject  private var dateTimeViewModel =  DateTimePickerViewModel()
+    
+    //Accesses the presentation mode of the view
+    @Environment(\.presentationMode) var presentationMode
    
     var body: some View {
         VStack {
@@ -29,6 +32,7 @@ struct DateTimePickerView: View {
             
             Button("Submit") {
                 dateTimeViewModel.submitCheckInTime()
+                self.presentationMode.wrappedValue.dismiss()
             }
             .padding()
             .frame(maxWidth: .infinity)
